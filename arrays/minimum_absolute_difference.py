@@ -1,19 +1,16 @@
 """
-LeetCode 1200 - Minimum Absolute Difference
+LeetCode 26 - Remove duplicates from Sorted Array
 Difficulty: Easy
-Topic: Arrays
+Topic: Arrays, Two Pointer 
 """
 
 class Solution(object):
-    def minimumAbsDifference(self, arr):
-        arr.sort()
-        minimum=float('inf')
-        for i in range(len(arr)-1):
-            if arr[i+1]-arr[i]<minimum:
-                minimum=arr[i+1]-arr[i]
-        result=[]
-        for i in range(len(arr)-1):
-            if arr[i+1]-arr[i]==minimum:
-                result.append([arr[i],arr[i+1]])
-        return result
-                
+    def removeDuplicates(self, nums):
+        i=0
+        for j in range(len(nums)):
+            if nums[j]!=nums[i]:
+                i+=1
+                nums[i]=nums[j]
+        return i+1
+
+
