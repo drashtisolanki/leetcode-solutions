@@ -33,3 +33,32 @@ This folder contains solutions to array problems from LeetCode.
 
 📌 **Time Complexity:** O(n)  
 📌 **Space Complexity:** O(1)  
+
+---
+
+## 🔢 Problem 2: Remove Element (LeetCode 27)
+
+### 🧠 Approach
+
+#### 🔹 Brute Force Approach
+- Traverse the array and remove elements equal to `val` manually  
+- Shift elements each time a match is found  
+
+📌 **Time Complexity:** O(n²)  
+📌 **Space Complexity:** O(1)  
+
+---
+
+#### 🔹 Optimal Approach (Two Pointer Technique)
+- Use two pointers:
+  - `i` → tracks position for valid (non-val) elements  
+  - `j` → iterates through the array  
+
+- Compare `nums[j]` with `val`  
+- If not equal:
+  ```python
+  nums[i] = nums[j]
+  i += 1
+
+📌 **Time Complexity:** O(n)
+📌 **Space Complexity:** O(1)
