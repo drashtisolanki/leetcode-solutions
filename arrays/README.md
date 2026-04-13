@@ -93,3 +93,34 @@ This folder contains solutions to array problems from LeetCode.
 
 📌 **Time Complexity:** O(n)  
 📌 **Space Complexity:** O(1)
+
+---
+
+## 🔢 Problem 4: Next Permutation (LeetCode 31)
+
+### 🧠 Approach
+
+#### 🔹 Brute Force Approach
+- Generate all permutations of the array  
+- Sort them and find the next permutation  
+
+📌 **Time Complexity:** O(n! * n)  
+📌 **Space Complexity:** O(n!)  
+
+---
+
+#### 🔹 Optimal Approach
+- Traverse from right and find first index `i` such that:
+  nums[i] < nums[i + 1]
+
+- If no such index exists:
+  - Reverse the entire array  
+
+- Otherwise:
+  - Find index `j` from right such that nums[j] > nums[i]  
+  - Swap nums[i] and nums[j]  
+
+- Reverse the subarray from i+1 to end  
+
+📌 **Time Complexity:** O(n)  
+📌 **Space Complexity:** O(1)  
