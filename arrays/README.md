@@ -96,31 +96,36 @@ This folder contains solutions to array problems from LeetCode.
 
 ---
 
-## 🔢 Problem 4: Next Permutation (LeetCode 31)
+## 🔢 Problem 4: Search in Rotated Sorted Array (LeetCode 33)
 
 ### 🧠 Approach
 
 #### 🔹 Brute Force Approach
-- Generate all permutations of the array  
-- Sort them and find the next permutation  
+- Traverse the array linearly  
+- Compare each element with target  
+- Return index if found, else return -1  
 
-📌 **Time Complexity:** O(n! * n)  
-📌 **Space Complexity:** O(n!)  
+📌 **Time Complexity:** O(n)  
+📌 **Space Complexity:** O(1)  
 
 ---
 
-#### 🔹 Optimal Approach
-- Traverse from right and find first index `i` such that:
-  nums[i] < nums[i + 1]
+#### 🔹 Optimal Approach (Binary Search)
+- Use binary search with two pointers:
+  - left → start of array  
+  - right → end of array  
 
-- If no such index exists:
-  - Reverse the entire array  
+- Find mid index  
+- If nums[mid] == target → return mid  
 
-- Otherwise:
-  - Find index `j` from right such that nums[j] > nums[i]  
-  - Swap nums[i] and nums[j]  
+- Check which part is sorted:
+  - If left half is sorted:
+    - Check if target lies in this range  
+    - Else move to right half  
 
-- Reverse the subarray from i+1 to end  
+  - Else right half is sorted:
+    - Check if target lies in this range  
+    - Else move to left half  
 
-📌 **Time Complexity:** O(n)  
+📌 **Time Complexity:** O(log n)  
 📌 **Space Complexity:** O(1)  
