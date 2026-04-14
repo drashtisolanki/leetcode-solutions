@@ -129,3 +129,34 @@ This folder contains solutions to array problems from LeetCode.
 
 📌 **Time Complexity:** O(log n)  
 📌 **Space Complexity:** O(1)  
+
+---
+
+## 🔢 Problem 5: Find First and Last Position of Element in Sorted Array (LeetCode 34)
+
+### 🧠 Approach
+
+#### 🔹 Brute Force Approach
+- Traverse the array and find first and last occurrence of target  
+- Update start and end indices accordingly  
+
+📌 **Time Complexity:** O(n)  
+📌 **Space Complexity:** O(1)  
+
+---
+
+#### 🔹 Optimal Approach (Binary Search)
+- Use binary search twice:
+  - First to find the **first occurrence**
+  - Second to find the **last occurrence**
+
+- For first occurrence:
+  - Move left when target is found  
+
+- For last occurrence:
+  - Move right when target is found  
+
+- Combine both results  
+
+📌 **Time Complexity:** O(log n)  
+📌 **Space Complexity:** O(1)  
