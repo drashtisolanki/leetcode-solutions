@@ -8,3 +8,4 @@ organized by topic and written for clarity and learning.
 - Leetcode 27: Remove Element
 - Leetcode 31: Next Permutation
 - Leetcode 33: Search in Rotated Sorted Array
+- Leetcode 34: Find First and Last Position of Element in Sorted Array
