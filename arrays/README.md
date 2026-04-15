@@ -160,3 +160,35 @@ This folder contains solutions to array problems from LeetCode.
 
 📌 **Time Complexity:** O(log n)  
 📌 **Space Complexity:** O(1)  
+
+---
+
+## 🔢 Problem 6: Search Insert Position (LeetCode 35)
+
+### 🧠 Approach
+
+#### 🔹 Brute Force Approach
+- Traverse the array linearly  
+- If target is found → return index  
+- If target is smaller than current element → return that index  
+- If not found → return length of array  
+
+📌 **Time Complexity:** O(n)  
+📌 **Space Complexity:** O(1)  
+
+---
+
+#### 🔹 Optimal Approach (Binary Search)
+- Use binary search with two pointers:
+  - left → start of array  
+  - right → end of array  
+
+- Find mid index  
+- If nums[mid] == target → return mid  
+- If nums[mid] < target → search right half  
+- Else → search left half  
+
+- If not found, return `left` (correct insert position)  
+
+📌 **Time Complexity:** O(log n)  
+📌 **Space Complexity:** O(1)  
