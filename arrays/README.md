@@ -192,3 +192,39 @@ This folder contains solutions to array problems from LeetCode.
 
 📌 **Time Complexity:** O(log n)  
 📌 **Space Complexity:** O(1)  
+
+---
+
+## 🔢 Problem 7: Rotate String (LeetCode 796)
+
+### 🧠 Approach
+
+#### 🔹 Approach 1 (Sorting + Rotation Check)
+
+- Sort both strings.
+- Compare the sorted strings.
+- If they are not equal, return `False`.
+- If they are equal, concatenate the original string with itself (`s + s`).
+- Check whether `goal` is present in `s + s`.
+- If present, return `True`; otherwise, return `False`.
+
+📌 **Time Complexity:** `O(n log n)`
+- Sorting: `O(n log n)`
+- Substring Search: `O(n)`
+
+📌 **Space Complexity:** `O(n)`
+
+---
+
+#### 🔹 Approach 2 (Optimal – Concatenation Trick)
+
+- First, check whether both strings have the same length.
+- Concatenate the original string with itself (`s + s`).
+- Every valid rotation of `s` will appear as a substring of `s + s`.
+- If `goal` exists in `s + s`, return `True`; otherwise, return `False`.
+
+📌 **Time Complexity:** `O(n)`
+
+📌 **Space Complexity:** `O(n)`
+
+---
