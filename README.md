@@ -11,3 +11,11 @@ organized by topic and written for clarity and learning.
 - Leetcode 34: Find First and Last Position of Element in Sorted Array
 - LeetCode 35: Search Insert Position
 - Leetcode 796: Rotate String
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0007-reverse-integer](https://github.com/drashtisolanki/leetcode-solutions/tree/master/0007-reverse-integer) |
+<!---LeetCode Topics End-->
