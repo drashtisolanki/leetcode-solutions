@@ -21,4 +21,16 @@ This repository contains my LeetCode problem solutions.
 |  |
 | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/drashtisolanki/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+## Math
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/drashtisolanki/leetcode-solutions/tree/master/0412-fizz-buzz) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/drashtisolanki/leetcode-solutions/tree/master/0412-fizz-buzz) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/drashtisolanki/leetcode-solutions/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
